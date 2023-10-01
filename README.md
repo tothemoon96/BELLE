@@ -19,7 +19,7 @@
 </br>
 
 ## 🔄 最近更新
-* [2023/09/26] 更新了RLHF的训练代码，具体细节见：[README_RLHF.md](train/README_RLHF.md)
+* [2023/09/26] 更新了RLHF的训练代码，支持PPO和[DPO](https://arxiv.org/abs/2305.18290)训练，具体细节见：[README_RLHF.md](train/README_RLHF.md)
 * [2023/08/16] 基于原有的[train_3.5M_CN](https://huggingface.co/datasets/BelleGroup/train_3.5M_CN)数据新增了指令类别字段，共包括13个类别，具体细节见：[train_3.5M_CN_With_Category](https://huggingface.co/datasets/BELLE-2/train_3.5M_CN_With_Category)
 * [2023/08/10] 更新了基于ZeRO Inference的推理代码，详见[train/README_ZERO_INFERENCE.md](train/README_ZERO_INFERENCE.md)
 * [2023/08/07] 更新了继续预训练代码和指令微调代码，添加了flash attention 2，详见[train/README.md](train/README.md)。同时打包了运行环境，详见[train/docker/README.md](train/docker/README.md)
@@ -66,7 +66,7 @@
 详见[BELLE/models](models/)
 
 * 基于BLOOMZ-7B1-mt优化后的模型：[BELLE-7B-0.2M](https://huggingface.co/BelleGroup/BELLE-7B-0.2M)，[BELLE-7B-0.6M](https://huggingface.co/BelleGroup/BELLE-7B-0.6M)，[BELLE-7B-1M](https://huggingface.co/BelleGroup/BELLE-7B-1M)，[BELLE-7B-2M](https://huggingface.co/BelleGroup/BELLE-7B-2M)
-
+* 基于[Meta LLaMA2](https://github.com/facebookresearch/llama)实现调优的模型：[BELLE-Llama2-13B-chat-0.4M](https://huggingface.co/BELLE-2/BELLE-Llama2-13B-chat-0.4M)
 * 基于[Meta LLaMA](https://github.com/facebookresearch/llama)实现调优的模型：[BELLE-LLaMA-7B-0.6M-enc](https://huggingface.co/BelleGroup/BELLE-LLaMA-7B-0.6M-enc)
 , [BELLE-LLaMA-7B-2M-enc](https://huggingface.co/BelleGroup/BELLE-LLaMA-7B-2M-enc)
 , [BELLE-LLaMA-7B-2M-gptq-enc](https://huggingface.co/BelleGroup/BELLE-LLaMA-7B-2M-gptq-enc)
